@@ -24,7 +24,7 @@ def push(stack, item):
 def pop(stack):
     if check_empty(stack):
         return "Stack is empty, nothing to remove!"
-    return stack.pop()
+    return 'The item ' + stack.pop() + ' was removed from the stack.'
 
 
 user_input = input('Would you like to create a stack? (yes / no) > ')
@@ -65,7 +65,7 @@ while user_input != 'no':
         push(stack, item)
     
     elif command == '4':
-        print('The item ' + pop(stack) + ' was removed from the stack.')
+        print(pop(stack))
     
     elif command == '5': 
         stack.clear()
