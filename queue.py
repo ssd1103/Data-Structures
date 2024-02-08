@@ -52,9 +52,9 @@ while user_input != 'no':
     
     if command == '1':
         if check_empty(queue) == True:
-            print('queue is empty!')
+            print('Queue is empty!')
         else:
-            print('queue is NOT empty.')
+            print('Queue is NOT empty.')
     
     elif command == '2':
         print('The queue has', check_length(queue), 'items.')
